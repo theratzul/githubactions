@@ -1,0 +1,9 @@
+name: second workflow
+on: push
+jobs:
+  ftest-:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: |
+             echo "Hello Robert" 
