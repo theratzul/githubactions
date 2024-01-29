@@ -1,0 +1,10 @@
+name: Events-DEMO
+on:
+  pull_request:
+    types: opened
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Output event data
+      run: echp "${{ to JSON(github.event) }}"
