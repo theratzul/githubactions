@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 16
       - name: Upload artifacts
-        uses: actions/upload-artifactory@v3
+        uses: actions/upload-artifact@v3
         with:
           name: dist-files
           path: |
