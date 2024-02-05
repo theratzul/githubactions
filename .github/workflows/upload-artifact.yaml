@@ -10,6 +10,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+      - Publish JS filename
+        run: find *.html -type f -execdir echo '{}' ';'
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
