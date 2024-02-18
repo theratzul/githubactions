@@ -8,3 +8,11 @@ jobs:
         run: echo "Build number"
       - name: Get
         uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm ci
+      - name: Test code
+        run: npm run test
+      - name: Build code
+        run: npm run build
+      - name: Deploy project
+        run: echo "Deploying"
