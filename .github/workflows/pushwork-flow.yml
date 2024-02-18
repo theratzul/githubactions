@@ -6,5 +6,5 @@ jobs:
     steps:
       - name: Output1
         run: echo "Build number"
-        name: Get Code1
+      - name: Get
         uses: actions/checkout@v3
