@@ -1,10 +1,10 @@
-name: push workflow2
+name: push
 on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Output
+      - name: Output1
         run: echo "Build number"
-        name: Get Code
+        name: Get Code1
         uses: actions/checkout@v3
