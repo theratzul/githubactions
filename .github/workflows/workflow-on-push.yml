@@ -1,0 +1,6 @@
+name: push workflow # workflow name
+on: workflow_dispatch # workflow trigger
+jobs:
+  push-job:
+    runs-on: ubuntu-latest # runner
+    
