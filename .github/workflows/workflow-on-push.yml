@@ -1,6 +1,8 @@
 name: push workflow # workflow name
-on: workflow_dispatch # workflow trigger
+on: push # workflow trigger
 jobs:
   push-job:
     runs-on: ubuntu-latest # runner
-    
+    steps: 
+      - name: Get code
+      - uses: actions/checkout@v3
