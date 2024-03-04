@@ -9,7 +9,7 @@ jobs:
       - name: Setup node action
         uses: actions/setup-node@v3
         with:
-          node-version: 16     
+          node-version: 18     
       # - name: Npm install dependencies
       #   run: npm ci    
       - name: Run npm test
