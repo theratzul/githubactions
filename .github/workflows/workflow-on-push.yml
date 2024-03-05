@@ -18,7 +18,8 @@ jobs:
 ####
 #          Multiple Jobs
 ####
-  deploy:
+  deploy:   # run multpiple jobs
+    needs: push-job ## Push jobs after eachother
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -28,4 +29,4 @@ jobs:
         with:
           node-version: 18     
       - name: Build project
-        run: echo "Test"                
+        run: echo "Deploying ... "                

@@ -1,6 +1,9 @@
 ### Github Actions  
 workflows/pushwork-flow.yml  
 
+### Github/Actions - add jobs in paralel
+workflows/workflow-on-push.yaml  
+
 ### HTML  
 website.html(a button and paragraph https://youtu.be/G3e-cpL7ofc?t=486)  
 
