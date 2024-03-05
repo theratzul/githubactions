@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest # runner
     steps: 
       - name: Get code
-        uses: actions/checkout@v3 
+        uses: actions/checkout@v3 # use checkout action
       - name: Setup node action
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v3 # use install node with node-version
         with:
           node-version: 18     
       # - name: Npm install dependencies
@@ -15,3 +15,17 @@ jobs:
       # - name: Run npm test
       #   run: npm test     
 # npm ERR! A complete log of this run can be found in: /home/runner/.npm/_logs/2024-03-04T20_30_37_928Z-debug-0.log
+####
+#          Multiple Jobs
+####
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3 # use checkout action
+      - name: Setup node action
+        uses: actions/setup-node@v3 # use install node with node-version
+        with:
+          node-version: 18     
+      - name: Build project
+        run: echo "Test"                
