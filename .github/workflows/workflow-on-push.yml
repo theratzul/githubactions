@@ -31,4 +31,4 @@ jobs:
       - name: Build project
         run: echo "Deploying ... "                
       - name: Output Github context
-        run: echo "{{ toJSON(github) }}"           
+        run: echo "{{ toJSON(github) }}"   #Object added to JSON in expression we get metadata
