@@ -1,5 +1,5 @@
 name: push workflow # workflow name
-on: push # workflow trigger
+on: [push, workflow_dispatch] # workflow trigger on push and triggered manually
 jobs:
   push-job:
     runs-on: ubuntu-latest # runner
@@ -30,3 +30,5 @@ jobs:
           node-version: 18     
       - name: Build project
         run: echo "Deploying ... "                
+      - name: Output Github context
+        run: echo "{{ toJSON(github) }}"           

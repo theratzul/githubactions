@@ -4,6 +4,9 @@ workflows/pushwork-flow.yml
 ### Github/Actions - add jobs in paralel
 workflows/workflow-on-push.yaml  
 
+### Github/Actions - Expressions
+workflows/workflow-on-push.yaml   echo "{{ toJSON(github) }}"   
+
 ### HTML  
 website.html(a button and paragraph https://youtu.be/G3e-cpL7ofc?t=486)  
 
